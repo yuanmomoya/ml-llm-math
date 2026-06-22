@@ -123,7 +123,7 @@ $$
 \ \ \text{s.t.}\ T\mathbf 1=b,\ T^\top\mathbf 1=a .
 $$
 
-解具有 **Gibbs 形式**：$T^\*=\mathrm{diag}(u)\,K\,\mathrm{diag}(v)$，
+解具有 **Gibbs 形式**：$T^*=\mathrm{diag}(u)\,K\,\mathrm{diag}(v)$，
 其中 $K=\exp(-C/\varepsilon)$。通过交替缩放 $u,v$ 使边缘约束成立——这就是 **Sinkhorn 迭代**：
 
 $$
@@ -237,7 +237,7 @@ flowchart TD
 
 1. **KR 对偶**：证明当 $\|f\|_{\text{Lip}}\le 1$ 时，$\sup_f \mathbb E_\mu f-\mathbb E_\nu f=W_1(\mu,\nu)$（提示：从线性规划对偶出发）。
 2. **WGAN-GP 推导**：说明为什么在直线插值点约束梯度范数接近 1 能近似 1-Lipschitz。
-3. **Sinkhorn 收敛**：推导 $T^\*=\text{diag}(u)K\text{diag}(v)$ 的形式（提示：KKT 条件+熵正则）。
+3. **Sinkhorn 收敛**：推导 $T^*=\text{diag}(u)K\text{diag}(v)$ 的形式（提示：KKT 条件+熵正则）。
 4. **切片 Wasserstein**：实现随机方向投影到 $\mathbb R$ 的一维 OT，再对方向求平均。
 5. **颜色迁移**：把两幅图的颜色直方图做 Sinkhorn 匹配，实现快速的“风格搬运”。
 

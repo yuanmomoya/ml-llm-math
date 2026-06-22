@@ -95,7 +95,7 @@ flowchart TD
 ## 6) Beta 分布 Beta($\alpha,\beta$)
 
 - **场景**：**概率本身**的分布（CTR、转化率、成功率），位于区间 $(0,1)$。
-- **PDF**：$\displaystyle f(p)=\frac{1}{B(\alpha,\beta)}p^{\alpha-1}(1-p)^{\beta-1},\ 0。
+- **PDF**：$\displaystyle f(p)=\frac{1}{B(\alpha,\beta)}p^{\alpha-1}(1-p)^{\beta-1},\ 0<p<1$。
 - **期望/方差**：$\mathbb{E}[p]=\frac{\alpha}{\alpha+\beta},\ \mathrm{Var}=\frac{\alpha\beta}{(\alpha+\beta)^2(\alpha+\beta+1)}$。
 - **共轭**：伯努利/二项的共轭先验；后验还是 Beta（参数相加）。
 - **直觉**：$\alpha-1$ 像“先验成功次数”，$\beta-1$ 像“先验失败次数”。
@@ -211,4 +211,3 @@ beta_mom = (1-m)*S
 - **指数/Gamma**：等待时间与正参数；**Gamma** 是指数的族扩展，也是**泊松/指数的共轭**。
 - **正态**：连续噪声的基石，连接最小二乘与 CLT。
 - **选择口诀**：**数据类型先行**（0/1、计数、正量、比例、连续对称）→ 选族 → 看是否需要**共轭/先验平滑** → 验证残差与方差形态。
-

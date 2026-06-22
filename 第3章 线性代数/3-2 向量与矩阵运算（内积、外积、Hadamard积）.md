@@ -67,9 +67,11 @@ $\mathbf{x}\mathbf{y}^\top =\begin{bmatrix} x_1 y_1 & \cdots & x_1 y_n\\ \vdots 
 - 行都是 $\mathbf{y}^\top$ 的倍数，列都是 $\mathbf{x}$ 的倍数。
 
 - **矩阵乘可写成外积之和**：
-   若 $$A\in\mathbb{R}^{m\times k}, B\in\mathbb{R}^{k\times n}$，列出 $A$ 的列向量 $a_{:r}$、$B$ 的行向量 $b_{r:}$$：
+  若 $A\in\mathbb{R}^{m\times k}, B\in\mathbb{R}^{k\times n}$，列出 $A$ 的列向量 $a_{:r}$、$B$ 的行向量 $b_{r:}$：
 
-  AB=∑r=1ka:r br:.AB=\sum_{r=1}^{k} a_{:r}\, b_{r:}.
+  $$
+  AB=\sum_{r=1}^{k} a_{:r}\, b_{r:}.
+  $$
 
   这揭示“矩阵乘 = 秩 1 片段的叠加”。
 

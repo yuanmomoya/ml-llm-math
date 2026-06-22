@@ -30,33 +30,33 @@ $$
 \mathcal{L}(x,\lambda,\nu)=f(x)+\sum_{j=1}^m \lambda_j g_j(x)+\sum_{i=1}^p \nu_i h_i(x).
 $$
 
-**KKT 条件**（在一定正则性下，最优点 $x^\*$ 必须满足）：
+**KKT 条件**（在一定正则性下，最优点 $x^*$ 必须满足）：
 
 1. **原始可行性（Primal feasibility）**
 
    $$
-   g_j(x^\*)\le 0,\quad h_i(x^\*)=0.
+   g_j(x^*)\le 0,\quad h_i(x^*)=0.
    $$
 
 2. **对偶可行性（Dual feasibility）**
 
    $$
-   \lambda_j^\*\ge 0.
+   \lambda_j^*\ge 0.
    $$
 
 3. **互补松弛（Complementary slackness）**
 
    $$
-   \lambda_j^\*\cdot g_j(x^\*)=0\quad(\forall j).
+   \lambda_j^*\cdot g_j(x^*)=0\quad(\forall j).
    $$
 
-   > 要么**贴红线**（$g_j(x^\*)=0$）→ 罚单可能非零；
-   > 要么**离红线远**（$g_j(x^\*)<0$）→ 罚单必须为 0。
+   > 要么**贴红线**（$g_j(x^*)=0$）→ 罚单可能非零；
+   > 要么**离红线远**（$g_j(x^*)<0$）→ 罚单必须为 0。
 
 4. **驻点/站立条件（Stationarity）**
 
    $$
-   \nabla_x \mathcal{L}(x^\*,\lambda^\*,\nu^\*)=0.
+   \nabla_x \mathcal{L}(x^*,\lambda^*,\nu^*)=0.
    $$
 
    > 力的合成 = 0：梯度 + 约束的“推力”刚好平衡。
@@ -109,7 +109,7 @@ $$
 $$
 
 由于解直觉上在边界 $x+y=1$ 且 $x,y>0$，得到 $\lambda_2=\lambda_3=0$。
-代回驻点：$x=\lambda_1,\ y=\lambda_1$，再用 $x+y=1$ 得 $x^\*=y^\*=\tfrac12,\ \lambda_1^\*=\tfrac12$。
+代回驻点：$x=\lambda_1,\ y=\lambda_1$，再用 $x+y=1$ 得 $x^*=y^*=\tfrac12,\ \lambda_1^*=\tfrac12$。
 **验证**：可行、对偶可行、互补、驻点都成立 → **全局最优**。
 
 > 这就是“把原点投影到线段 $x+y=1$ 且第一象限上”的结果：$(\tfrac12,\tfrac12)$。
@@ -176,8 +176,8 @@ $$
 
 **对偶问题**：$\max_{\lambda\ge0,\nu} g(\lambda,\nu)$。
 
-* **弱对偶**：对任意 $\lambda\ge0,\nu$，$g(\lambda,\nu)\le f^\*$。
-* **强对偶**：若凸且满足 Slater，存在 $(x^\*,\lambda^\*,\nu^\*)$ 使 $g(\lambda^\*,\nu^\*)=f(x^\*)$。此时 KKT 条件与原/对偶最优性**等价**。
+* **弱对偶**：对任意 $\lambda\ge0,\nu$，$g(\lambda,\nu)\le f^*$。
+* **强对偶**：若凸且满足 Slater，存在 $(x^*,\lambda^*,\nu^*)$ 使 $g(\lambda^*,\nu^*)=f(x^*)$。此时 KKT 条件与原/对偶最优性**等价**。
 * **意义**：有时直接解对偶更容易（如 SVM），KKT 提供原对偶之间的**桥**与**停止准则**。
 
 ---

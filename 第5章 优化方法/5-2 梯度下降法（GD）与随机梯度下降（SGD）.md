@@ -49,8 +49,8 @@ flowchart TD
 
 **典型收敛结论**
 
-* **L-光滑 + 选择 $\eta \le 1/L$**：$f(x_k)-f(x^\*) \le O(1/k)$（凸）。
-* **$\mu$-强凸 + $\eta \le 1/L$**：**线性收敛**，$f(x_k)-f(x^\*)\le (1-\mu/L)^k \cdot (f(x_0)-f(x^\*))$。
+* **L-光滑 + 选择 $\eta \le 1/L$**：$f(x_k)-f(x^*) \le O(1/k)$（凸）。
+* **$\mu$-强凸 + $\eta \le 1/L$**：**线性收敛**，$f(x_k)-f(x^*)\le (1-\mu/L)^k \cdot (f(x_0)-f(x^*))$。
 * **非凸**：若 $\eta<1/L$，则 $f(x_k)$ 单调下降且 $\min_{t<k}\|\nabla f(x_t)\|^2 \le O\!\left(\frac{1}{k}\right)$。
 
 **小例子：二次型**

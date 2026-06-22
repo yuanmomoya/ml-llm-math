@@ -230,7 +230,7 @@ class MLP(nn.Module):
 
 ## 9. 小练习（带提示）
 
-1. **软阈值**：推导 Lasso 的一维闭式解 $w^\*=\operatorname{sign}(z)\max(|z|-\lambda,0)$，并验证在合成数据上的稀疏性。
+1. **软阈值**：推导 Lasso 的一维闭式解 $w^*=\operatorname{sign}(z)\max(|z|-\lambda,0)$，并验证在合成数据上的稀疏性。
 2. **Adam vs AdamW**：在同一模型上对比加入 L2 到损失里 vs 用 weight decay 的学习曲线差异。
 3. **Dropout 温度**：在小型 MLP 上扫 $p\in\{0,0.1,0.3,0.5\}$，观察训练/验证 gap 与校准误差的变化。
 4. **弹性网（Elastic Net）**：实现 $\lambda_1\|w\|_1+\lambda_2\|w\|_2^2$，并在相关特征上对比仅 L1 的稳定性。
